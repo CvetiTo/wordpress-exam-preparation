@@ -1,17 +1,19 @@
 <li class="job-card">
     <div class="job-primary">
-        <h2 class="job-title">
+        <h1 class="job-title">
             <a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?>
             </a>
-        </h2>
+        </h1>
         <div class="job-meta">
-            <a class="meta-company" href="#">Company Awesome Ltd.</a>
+            <a class="meta-company">
+                <?php echo the_category();  
+                //http://localhost/softuni-jobs-exam/?category_name=
+                //http://localhost/softuni-jobs-exam/?cat=2 sorted category
+                //http://localhost/softuni-jobs-exam/?author=1 sorted author-admin
+                 ?>
+        </a>
             <span class="meta-date"><?php echo get_the_date(); ?></span>
-        </div>
-        <div class="job-details">
-            <span class="job-location">The Hague (The Netherlands)</span>
-            <span class="job-type">Contract staff</span>
         </div>
     </div>
     <div class="job-logo">

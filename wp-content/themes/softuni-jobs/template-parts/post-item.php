@@ -13,7 +13,7 @@
                 //http://localhost/softuni-jobs-exam/?author=1 sorted author-admin
                  ?>
         </a>
-            <span class="meta-date"><?php the_date(); ?></span>
+            <span class="meta-date"><?php echo get_the_date(); ?></span>
         </div>
     </div>
     <div class="job-logo">

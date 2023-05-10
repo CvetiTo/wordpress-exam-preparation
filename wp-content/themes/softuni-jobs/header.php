@@ -15,7 +15,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<div class="site-wrapper">
 		<header class="site-header">
 			<?php if (is_home()) : ?>
